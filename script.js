@@ -55,14 +55,14 @@ async function main() {
         await grocery_list.addItem(g_item);
       }
       any.teardown();
+      console.log("Mission complete!")
     });
   } catch (err) {
     console.error(err);
   }
-  console.log('Mission complete.');
+
 }
 main();
-
 
 async function authorize() {
   const credentials = JSON.parse(
